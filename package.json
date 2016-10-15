@@ -3,12 +3,18 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
   "scripts": {
-    "build": "rollup -c | echo \"done\""
+    "build": "rollup -c | echo \"done\"",
+    "prebuild": "npm run format",
+    "format": "semistandard-format -w src/*.js"
   },
   "keywords": [
     "rollup",
-    "babel"
+    "babel",
+    "semistandard"
   ],
   "author": "",
   "license": "ISC",
@@ -16,6 +22,7 @@
     "babel-preset-es2015-rollup": "^1.2.0",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-json": "^2.0.2"
+    "rollup-plugin-json": "^2.0.2",
+    "semistandard-format": "^3.0.0"
   }
 }
