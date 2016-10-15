@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rollup -c | echo \"done\"",
     "prebuild": "npm run format",
-    "format": "semistandard-format -w src/*.js"
+    "format": "semistandard src/**/*.js --fix",
+    "check": "semistandard src/**/*.js --verbose | snazzy"
   },
   "keywords": [
     "rollup",
@@ -24,6 +25,7 @@
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-json": "^2.0.2",
-    "semistandard-format": "^3.0.0"
+    "semistandard": "^9.1.0",
+    "snazzy": "^5.0.0"
   }
 }
