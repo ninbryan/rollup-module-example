@@ -5,7 +5,10 @@ export default {
   entry:'src/index.js',
   indent:true,
   sourceMap:true,
-  plugins:[json(), babel()],
+  plugins:[
+    json(),
+    babel({exclude:'node_modules/**'})
+  ],
   moduleName:'rollupModuleExample',
   format:'umd',
   dest:'dist/index.js'

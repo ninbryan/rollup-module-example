@@ -17,7 +17,7 @@
     "semistandard"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-preset-es2015-rollup": "^1.2.0",
